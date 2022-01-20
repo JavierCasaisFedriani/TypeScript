@@ -86,3 +86,21 @@ const sumarFlecha = (num1: number ,num2: number): number =>{
 - Parametros obligatorio --> nameVariable: tipoDato
 - Paramatros opcionales --> nameVariable ?: tipoDato
 - Parametos con valor por defecto --> nameVariable: tipoDato = dato
+
+## Añadir funcion a un objeto
+
+```
+interface Personaje{
+    nombre: string
+    vida: number
+    mostrarDato:() => void
+}
+
+const Persona1: Personaje ={
+    nombre : 'Pedro',
+    vida : 25,
+    mostrarDato(){
+        console.log('Puntos de viada: ', this.vida);
+    }
+}
+```
