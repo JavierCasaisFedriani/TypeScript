@@ -65,6 +65,7 @@ console.table(persona2)
 ## Funciones
 ```
 /*Funciones */
+- Las funciones siempre devuelven **undifined** si no hay return
 
 /*Esta funcion por defecto devolvera un number */
 function sumar( a: number, b: number){
@@ -74,3 +75,14 @@ function sumar( a: number, b: number){
 function restar(a: number, b: number): string{
     return "hola"
 }
+/* Funcion flecha */
+const sumarFlecha = (num1: number ,num2: number): number =>{
+    return num1 + num2;
+}
+
+```
+## Tipos de parametros
+
+- Parametros obligatorio --> nameVariable: tipoDato
+- Paramatros opcionales --> nameVariable ?: tipoDato
+- Parametos con valor por defecto --> nameVariable: tipoDato = dato
