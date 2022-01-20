@@ -3,7 +3,7 @@
 ## Variables
 ```
 /* con let tenemos que definir el tipo de datos*/
-	let nombre: string
+let nombre: string
 
 nombre = "javi";
 
