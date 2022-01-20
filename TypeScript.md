@@ -61,3 +61,19 @@
     /* Mostramos los datos de un objeto en una tabla*/
     console.table(persona2)
 ```
+
+## Funciones
+```
+	/*Funciones */
+
+	/*Esta funcion por defecto devolvera un number */
+	function sumar( a: number, b: number){
+	    return a + b;
+	}
+	/*
+	Si quieres que retorne otro dato que no sea number, tendremos que poner despues
+	del parentesis dos puntos(:) y el dato 
+	*/
+	function restar(a: number, b: number): string{
+	    return "hola"
+	}
