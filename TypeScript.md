@@ -104,3 +104,27 @@ const Persona1: Personaje ={
     }
 }
 ```
+
+## 
+
+Con `:` renombramos atributo
+
+```
+
+//DECONSTRUCCION 
+
+//ANTES DE DESCONSTRUIR
+
+console.log("Volumen: ", cancion1.volumen)
+console.log("Segundos: ", cancion1.segundos)
+console.log("Nombre: ", cancion1.cancion)
+console.log("Nombre autor: ", cancion1.detalle.nombreAutor)
+
+
+//DESCONSTRUYENDO
+const{cancion: nombreCancion, segundos, volumen, cancion, detalle:{nombreAutor}} = cancion1;
+
+console.log("Volumen: ", volumen)
+console.log("Segundos: ", segundos)
+console.log("Nombre: ", cancion)
+console.log("Nombre autor: ", nombreAutor)
