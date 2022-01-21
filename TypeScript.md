@@ -130,6 +130,7 @@ console.log("Nombre autor: ", nombreAutor)
 ```
 ### Desconstruir un Array
 
+
 ### Desconstruir una funcion
 
 ## Inportacion y Exportaciones 
@@ -147,4 +148,24 @@ export interface "nombreInterface"{
 ```
 import "nombre de la interface" from "ruta"
 
+ ```
  
+## Clases
+
+### Los atributos pueden ser
+- Private
+- Public
+- Static
+### Ejemplo
+```
+
+class Heroe{
+    constructor(
+        public alterEgo: string, 
+        public edad: number, 
+        public nombreReal: string
+        ){}
+}
+
+const ironman = new Heroe('ironman', 45, 'Toni');
+console.log(ironman)
