@@ -105,14 +105,13 @@ const Persona1: Personaje ={
 }
 ```
 
-## 
+## DECONSTRUCCION 
 
 Con `:` renombramos atributo
 
+### Desconstruccion de un objeto
+
 ```
-
-//DECONSTRUCCION 
-
 //ANTES DE DESCONSTRUIR
 
 console.log("Volumen: ", cancion1.volumen)
@@ -128,3 +127,24 @@ console.log("Volumen: ", volumen)
 console.log("Segundos: ", segundos)
 console.log("Nombre: ", cancion)
 console.log("Nombre autor: ", nombreAutor)
+```
+### Desconstruir un Array
+
+### Desconstruir una funcion
+
+## Inportacion y Exportaciones 
+### Que se puede exportar e importar
+- Funciones
+- Interfaces
+### Pasos
+1. Primero tendremos que exportar la interface
+```
+export interface "nombreInterface"{
+	atributo: typo
+}
+```
+2. Y luego imporatamos la interface con `command + .`
+```
+import "nombre de la interface" from "ruta"
+
+ 
