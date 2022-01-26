@@ -169,3 +169,45 @@ class Heroe{
 
 const ironman = new Heroe('ironman', 45, 'Toni');
 console.log(ironman)
+```
+
+## Herencias
+```
+class PersonaNormal{
+    constructor(
+        public nombreNormal: string,
+        public direccion: string
+    ){}
+}
+
+class Heroe extends(PersonaNormal){
+    constructor(
+        public alterEgo : string,
+        public edad: number,
+        nombre: string,
+        direccionPersona: string
+    ){
+        super(nombre, direccionPersona);
+    }
+}
+
+const ironMan = new Heroe("ironMan", 45, "tony", "calle falsa");
+console.table(ironMan)
+
+```
+
+## Genericos
+```
+//La <T> indica que puede ser de cualquier tipo
+function queTipoSoy <T> (argumento: T){
+    return argumento
+}
+
+let soyString = queTipoSoy("Hola que tal");
+let soyNumber = queTipoSoy(100);
+let soyArray = queTipoSoy([1,2,3,4,5,6]);
+//Si quieres especificar algun tipo en concreto tendremos que expecificarlo
+let soyNumber2 = queTipoSoy<number>(110);
+let soyArrayNS = queTipoSoy<(number | string)[]>([1,2,"hola"]);
+```
+
